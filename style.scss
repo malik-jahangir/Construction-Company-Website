@@ -1,4 +1,4 @@
-$color-primary: #efd346;
+$color-primary: #060c1c3c;
 // $color-primary: #e6af4c;
 $color-secondary: #05203e;
 $color-background2: #2f4858;
@@ -59,11 +59,11 @@ p {
   }
 }
 
-h2 {
-  font-family: "HelveticaCyr", serif;
+// h2 {
+//   font-family: "HelveticaCyr", serif;
 
-  color: $color-blue;
-}
+//   color: $color-blue;
+// }
 h1,
 h3 {
   color: $color-secondary;
@@ -91,7 +91,9 @@ h1 {
 h2 {
   font-size: 50px;
   font-weight: normal;
+  // font-weight: bold;
   font-family: "Helvetica", sans-serif;
+  color: $color-blue;
   @media only screen and (max-width: 1600px) {
     font-size: 45px;
   }
@@ -198,8 +200,8 @@ a {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 0;
-  transform: translateX(100%);
+  right: -200vw;
+  // transform: translateX(100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,7 +213,7 @@ a {
 
   // opacity: 0.88;
 
-  transition: 0.5s ease-in-out;
+  transition: 0.7s ease-out;
   // transition: all 650ms cubic-bezier(0.645, 0.045, 0.355, 1);
 
   // color: mix($color-primary, $color-white, $weight: 4);
@@ -290,9 +292,10 @@ a {
     // }
   }
 }
-
 .nav-active {
-  transform: translateX(0);
+
+right: 0;
+  // transform: translateX(0);
   .nav-item {
     //   opacity: 1;
     // margin-right: 0px;
@@ -386,17 +389,17 @@ header {
 }
 .logo {
   img {
-    width: 190px;
+    width: 165px;
     margin: 10px 0;
 
     @media only screen and (max-width: 1600px) {
-      width: 180px;
+      width: 155px;
     }
     @media only screen and (max-width: 1050px) {
-      width: 170px;
+      width: 150px;
     }
     @media only screen and (max-width: 800px) {
-      width: 160px;
+      width: 145px;
     }
   }
 }
@@ -416,7 +419,12 @@ header {
       @media only screen and (max-width: 1400px) {
         // justify-content: space-between;
         padding: 0 4vw 40px 4vw;
-        @media only screen and (max-width: 1100px) {
+      }
+      @media only screen and (max-width: 1100px) {
+        // justify-content: space-between;
+        padding: 0 2vw 40px 2vw;
+      }
+        @media only screen and (max-width: 1020px) {
           background: url("img/bg1.jpg");
           background-position: left;
           background-size: cover;
@@ -436,7 +444,7 @@ header {
             // z-index: 2;
             background-color: rgba($color-secondary, 0.2);
           }
-        }
+        
       }
 
       h2 {
@@ -479,7 +487,7 @@ header {
 
           // text-align: center;
         }
-        @media only screen and (max-width: 1100px) {
+        @media only screen and (max-width: 1020px) {
           // position: absolute;
           // left: 20vw;
           color: $color-white;
@@ -510,7 +518,7 @@ header {
           @media only screen and (max-width: 1250px) {
             width: 700px;
           }
-          @media only screen and (max-width: 1100px) {
+          @media only screen and (max-width: 1020px) {
             display: none;
           }
         

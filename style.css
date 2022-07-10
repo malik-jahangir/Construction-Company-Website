@@ -47,11 +47,6 @@ p {
   }
 }
 
-h2 {
-  font-family: "HelveticaCyr", serif;
-  color: #060c1c;
-}
-
 h1,
 h3 {
   color: #05203e;
@@ -76,6 +71,7 @@ h2 {
   font-size: 50px;
   font-weight: normal;
   font-family: "Helvetica", sans-serif;
+  color: #060c1c;
 }
 @media only screen and (max-width: 1600px) {
   h2 {
@@ -196,8 +192,7 @@ a {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 0;
-  transform: translateX(100%);
+  right: -200vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,7 +200,7 @@ a {
   width: 100%;
   z-index: 100;
   background-color: #05203e;
-  transition: 0.5s ease-in-out;
+  transition: 0.7s ease-out;
 }
 .nav-mobile .nav-contact {
   margin-left: 6vw;
@@ -232,7 +227,7 @@ a {
 }
 .nav-mobile .bold {
   font-weight: bold;
-  color: #efd346;
+  color: rgba(6, 12, 28, 0.2352941176);
 }
 .nav-mobile .nav-container {
   margin-right: 0;
@@ -259,7 +254,7 @@ a {
 }
 
 .nav-active {
-  transform: translateX(0);
+  right: 0;
 }
 .bold {
   font-weight: 600;
@@ -323,26 +318,26 @@ header nav ul li a:hover::after {
   width: 100%;
 }
 header nav ul li a:active {
-  color: #efd346;
+  color: rgba(6, 12, 28, 0.2352941176);
 }
 
 .logo img {
-  width: 190px;
+  width: 165px;
   margin: 10px 0;
 }
 @media only screen and (max-width: 1600px) {
   .logo img {
-    width: 180px;
+    width: 155px;
   }
 }
 @media only screen and (max-width: 1050px) {
   .logo img {
-    width: 170px;
+    width: 150px;
   }
 }
 @media only screen and (max-width: 800px) {
   .logo img {
-    width: 160px;
+    width: 145px;
   }
 }
 
@@ -361,7 +356,12 @@ header nav ul li a:active {
     padding: 0 4vw 40px 4vw;
   }
 }
-@media only screen and (max-width: 1400px) and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
+  .section1 .inner-section1 main {
+    padding: 0 2vw 40px 2vw;
+  }
+}
+@media only screen and (max-width: 1020px) {
   .section1 .inner-section1 main {
     background: url("img/bg1.jpg");
     background-position: left;
@@ -407,7 +407,7 @@ header nav ul li a:active {
     font-size: 37px;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1020px) {
   .section1 .inner-section1 main h2 {
     color: rgb(255, 255, 255);
     margin: 0;
@@ -437,7 +437,7 @@ header nav ul li a:active {
     width: 700px;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1020px) {
   .section1 .inner-section1 main img {
     display: none;
   }
@@ -831,7 +831,7 @@ header nav ul li a:active {
   border-radius: 30px;
 }
 .slide-dots .dot-active {
-  background-color: #efd346;
+  background-color: rgba(6, 12, 28, 0.2352941176);
   width: 15px;
   height: 15px;
 }
@@ -1165,7 +1165,7 @@ footer .inner-footer .footer-nav ul li a {
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: #efd346;
+  background-color: rgba(6, 12, 28, 0.2352941176);
   border-radius: 50%;
   z-index: -1;
   top: 50%;
@@ -1366,14 +1366,14 @@ footer .inner-footer .footer-nav ul li a {
   margin-top: 12px;
 }
 .contact-form-container .contact-form form button {
-  background-color: #efd346;
+  background-color: rgba(6, 12, 28, 0.2352941176);
   font-size: 17px;
   line-height: 1.6em;
   font-family: inherit;
   color: #05203e;
   margin: 18px 8px 0 0;
   padding: 5px 16px;
-  border: 2px solid #efd346;
+  border: 2px solid rgba(6, 12, 28, 0.2352941176);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
